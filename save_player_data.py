@@ -9,8 +9,8 @@ def csv_data(data, type_stats, year, season_type, data_type):
 		writer.writeheader()
 		for player in data:
 			try:
-				if type_stats is not 'opponent':
-					num = int(player['AGE'])
+				#if (type_stats is not 'opponent') and (type_stats is not 'estimated-advanced'):
+					#num = int(player['AGE'])
 				writer.writerow(player)
 			except:
 				pass
@@ -75,7 +75,7 @@ def input_and_save_data(year, season, stats, type_data=None):
 		url = 'https://stats.nba.com/players/shooting/?sort=PLAYER_NAME&dir=-1&Season=%s&SeasonType=%s%s' % (year, season, extra_data)
 
 		data = stat_scraper_all(url, type_data)
-	elif stats == 'advanced' or stats == 'usage':
+	elif stats == 'advanced' or stats == 'usage' or stats == 'estimated-advanced':
 		url = 'https://stats.nba.com/players/%s/?sort=PLAYER_NAME&dir=-1&Season=%s&SeasonType=%s' % (stats, year, season)
 		data = stat_scraper_all(url, stats)
 

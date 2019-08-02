@@ -143,7 +143,7 @@ def stat_scraper_all(url, type):
 				player_stats_find = stats.find_all('tr', attrs={'ng-show':'params.DistanceRange===\'By Zone\''})
 			elif type == '8ft':
 				player_stats_find = stats.find_all('tr', attrs={'ng-show':'params.DistanceRange===\'8ft Range\''})
-			elif type == 'traditional' or type == 'advanced':
+			elif type == 'traditional' or type == 'advanced' or type == 'estimated-advanced':
 				player_stats_find = stats.find_all('tr', attrs={'data-ng-repeat':'(i, row) in page track by ::row.$hash'})
 			elif type == 'scoring' or type == 'misc' or type == 'usage' or type == 'opponent' or type == 'defense':
 				player_stats_find = stats.find_all('tr', attrs={'data-ng-repeat':'(i, row) in page track by row.$hash'})
@@ -157,6 +157,8 @@ def stat_scraper_all(url, type):
 		stat_name_list_app = ['PLAYER', 'TEAM', 'AGE']
 		if type == 'opponent':
 			stat_name_list_app = stat_name_list_app[:2]
+		elif type == 'estimated-advanced':
+			stat_name_list_app = stat_name_list_app[:1]
 		stat_name_list = []
 		pages = soup.find('div', attrs={'class':'stats-table-pagination__info'})
 		tot_pages = pages.contents[2]
