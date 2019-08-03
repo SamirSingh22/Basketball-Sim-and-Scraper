@@ -25,7 +25,7 @@ def csv_data(data, year, part_season, stats, per_type):
                 pass
 
 
-def read_player_data(player_name):
+def read_data():
     year, part_season, stats, per_type = info_input(False)
     part_season_mod = part_season
     if part_season == 'Pre Season':
@@ -33,16 +33,19 @@ def read_player_data(player_name):
     elif part_season == 'Regular Season':
         part_season_mod = 'Regular_Season'
 
-    player_dict = {}
     if not os.path.isfile('CSV_stats/%s/%s/%s/%s_data_%s_%s_%s.csv' % (year, part_season_mod, stats, stats, year, part_season_mod, per_type)):
         save_data(year, part_season, stats, per_type)
     
+    player_dict = {}
+    player_list = []
+
     with open('CSV_stats/%s/%s/%s/%s_data_%s_%s_%s.csv' % (year, part_season_mod, stats, stats, year, part_season_mod, per_type), mode='r') as player_data:
         csv_data = csv.DictReader(player_data)
         for row in csv_data:
-            if row['PLAYER'] == player_name:
-                player_dict = dict(row)
-    return player_dict
+            player_dict = dict(row)
+            player_list.append(player_dict)
+            
+    return player_list
 
 def save_data(year, part_season, stats, per_type=None):
     data = []

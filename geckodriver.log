@@ -9789,3 +9789,96 @@ JavaScript error: https://stats.nba.com/players/estimated-advanced/?sort=PLAYER_
 ###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
 
 [Parent 16023, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-gHMaBx/firefox-67.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1564860027439	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.yLBCnj51Ue4Y"
+1564860027819	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1564860027819	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1564860027820	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1564860029235	Marionette	INFO	Listening on port 43589
+1564860029251	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/traditional/?sort=PLAYER_NAME&dir=-1&Season=2018-19&SeasonType=Regular%20Season&PerMode=PerGame, line 1461: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/traditional/?sort=PLAYER_NAME&dir=-1&Season=2018-19&SeasonType=Regular%20Season&PerMode=PerGame line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+1564860049359	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1564860058573	Marionette	INFO	Stopped listening on port 43589
+[Parent 19562, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-gHMaBx/firefox-67.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x610027,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+[Child 19753, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-gHMaBx/firefox-67.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1564862831962	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0ZCRHETLMOHm"
+1564862832319	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1564862832320	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1564862832320	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1564862833784	Marionette	INFO	Listening on port 41473
+1564862833895	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/scoring/?sort=PLAYER_NAME&dir=-1&Season=2018-19&SeasonType=Regular%20Season, line 1421: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/scoring/?sort=PLAYER_NAME&dir=-1&Season=2018-19&SeasonType=Regular%20Season line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+1564862850581	Marionette	INFO	Stopped listening on port 41473
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x610027,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+[Child 21293, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-gHMaBx/firefox-67.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 21109, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-gHMaBx/firefox-67.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1564862901969	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.BGU25KU8UmJm"
+1564862902306	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1564862902306	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1564862902306	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1564862903786	Marionette	INFO	Listening on port 38097
+1564862903876	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/defense/?sort=PLAYER_NAME&dir=-1&Season=2018-19&SeasonType=Regular%20Season&PerMode=PerGame, line 1434: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/defense/?sort=PLAYER_NAME&dir=-1&Season=2018-19&SeasonType=Regular%20Season&PerMode=PerGame line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221564790410142%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1564862925185	Marionette	INFO	Stopped listening on port 38097
+[Parent 21454, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-gHMaBx/firefox-67.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1564862993687	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Iul2DGMfZza3"
+1564862994052	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1564862994052	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1564862994052	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1564862995428	Marionette	INFO	Listening on port 36665
+1564862995502	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/misc/?sort=PLAYER_NAME&dir=-1&Season=2018-19&SeasonType=Regular%20Season&PerMode=PerGame, line 1416: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/misc/?sort=PLAYER_NAME&dir=-1&Season=2018-19&SeasonType=Regular%20Season&PerMode=PerGame line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+[Parent 21840, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-gHMaBx/firefox-67.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 21840, Gecko_IOThread] WARNING: pipe error (72): Connection reset by peer: file /build/firefox-gHMaBx/firefox-67.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1564863014304	Marionette	INFO	Stopped listening on port 36665
+1564863037136	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.E6w2sDwuynno"
+1564863037466	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1564863037467	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1564863037467	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1564863038847	Marionette	INFO	Listening on port 35763
+1564863038942	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/misc/?sort=PLAYER_NAME&dir=-1&Season=2018-19&SeasonType=Regular%20Season&PerMode=PerGame, line 1416: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/misc/?sort=PLAYER_NAME&dir=-1&Season=2018-19&SeasonType=Regular%20Season&PerMode=PerGame line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221564790410142%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1564863070161	Marionette	INFO	Stopped listening on port 35763
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+[Parent 22233, Gecko_IOThread] WARNING: pipe error (79): Connection reset by peer: file /build/firefox-gHMaBx/firefox-67.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
