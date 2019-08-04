@@ -32,5 +32,47 @@ def graph_top_ten():
 	plt.title('Top 10 Players in %s' % stat)
 	plt.show()
 
+def graph_stats_over_time(player_name):
+    for i in range(len(type_stats)):
+        print('%d: %s' % (i, type_stats[i]))
+    stat = input('Type in a number corresponding to the stats you want: ')
+
+    per_type = None
+    if int(stat) % 2 == 0:
+        for i in range(len(data_type)):
+            print('%d: %s' % (i, data_type[i]))
+        per_type = input('Type in a number corresponding to category you want: ')
+
+    for i in range(len(type_season)):
+        print('%d: %s' % (i, type_season[i]))
+    part_season = input('Type in a number corresponding to the part of the season you want: ')
+    player_stats_list = []
+    years = []
+    for season in year_list:
+        data = []
+        if per_type is None:
+            data = read_data(season, type_season[int(part_season)], type_stats[int(stat)])
+        else:
+	        data = read_data(season, type_season[int(part_season)], type_stats[int(stat)], data_type[int(per_type)])
+        for player in data:
+            if player['PLAYER'] == player_name:
+                years.append(season)
+                player_stats_list.append(player)
+    stat_names = list(player_stats_list[0].keys())
+    for i in range(len(stat_names)):
+        print('%s: %s' % (str(i), stat_names[i]))
+    inp = input('Type the number corresponding to which stat you want: ')
+    stat_in = stat_names[int(inp)]
+    graph_dict = {}
+    for i, player_season in enumerate(player_stats_list):
+        graph_dict[years[i]] = float(player_season[stat_in])
+    plt.plot(np.arange(len(years)), list(graph_dict.values()))
+    plt.xticks(np.arange(len(years)), years, rotation='vertical')
+    plt.xlabel('Seasons')
+    plt.ylabel(stat_in)
+    plt.title(player_name)
+    plt.show()
+        
+
 
 
