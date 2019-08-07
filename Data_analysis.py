@@ -1,10 +1,12 @@
-from CSV_data import *
+from CSV_data_gen import *
 from matplotlib import pyplot as plt
 import numpy as np
 from operator import itemgetter
 
+
+
 def graph_top_ten():
-	player_list = read_data()
+	player_list = read_data_gen()
 	stat_names = list(player_list[0].keys())
 	for i, key in enumerate(stat_names):
 		print('%s: %s' % (str(i), key))
@@ -33,8 +35,8 @@ def graph_top_ten():
 	plt.show()
 
 def graph_stats_over_time(player_name):
-    for i in range(len(type_stats)):
-        print('%d: %s' % (i, type_stats[i]))
+    for i in range(len(type_stats_gen)):
+        print('%d: %s' % (i, type_stats_gen[i]))
     stat = input('Type in a number corresponding to the stats you want: ')
 
     per_type = None
@@ -51,9 +53,9 @@ def graph_stats_over_time(player_name):
     for season in year_list:
         data = []
         if per_type is None:
-            data = read_data(season, type_season[int(part_season)], type_stats[int(stat)])
+            data = read_data_gen(season, type_season[int(part_season)], type_stats_gen[int(stat)])
         else:
-	        data = read_data(season, type_season[int(part_season)], type_stats[int(stat)], data_type[int(per_type)])
+	        data = read_data_gen(season, type_season[int(part_season)], type_stats_gen[int(stat)], data_type[int(per_type)])
         for player in data:
             if player['PLAYER'] == player_name:
                 years.append(season)

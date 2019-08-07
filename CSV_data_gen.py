@@ -1,21 +1,16 @@
 
-from NBA_scraper_gen import *
+from NBA_scraper import *
 import csv
 import os
 
-year_list = ['1996-97', '1997-98', '1998-99', '1999-00', '2000-01', '2001-02', '2002-03', '2003-04', '2004-05', '2005-06', '2007-08',
-			 '2008-09', '2009-10', '2010-11', '2011-12', '2012-13', '2013-14', '2014-15', '2015-16', '2016-17', '2017-18', '2018-19']
-type_season = ['Pre Season', 'Regular Season', 'Playoffs']
-data_type = ['Totals', 'PerGame', 'Per100Possessions', 'Per100Plays', 'Per48', 'Per40', 'Per36', 'PerMinute', 'PerPossession', 'PerPlay', 'MinutesPer']
-type_stats = ['traditional', 'advanced', 'misc', 'scoring', 'opponent', 'usage' , 'defense', 'estimated-advanced']
+per_type_list = ['traditional', 'misc', 'defense', 'opponent']
 
-
-def csv_data(data, year, part_season, stats, per_type):
+def csv_data_gen(data, year, part_season, stats, per_type):
 	if part_season == 'Pre Season':
 		part_season = 'Pre_Season'
 	elif part_season == 'Regular Season':
 		part_season = 'Regular_Season'
-	with open('CSV_stats/%s/%s/%s/%s_data_%s_%s_%s.csv' % (year, part_season, stats, stats, year, part_season, per_type), mode='w') as player_data:
+	with open('CSV_stats/%s/%s/%s/%s_data_%s.csv' % (year, part_season, stats, stats, per_type), mode='w') as player_data:
 		fieldnames = list(data[10].keys())
 		writer = csv.DictWriter(player_data, fieldnames=fieldnames)
 		writer.writeheader()
@@ -25,8 +20,7 @@ def csv_data(data, year, part_season, stats, per_type):
 			except:
 				pass
 
-
-def read_data(year=None, part_season=None, stats=None, per_type=None):
+def read_data_gen(year=None, part_season=None, stats=None, per_type=None):
 	if year == None:
 		year, part_season, stats, per_type = info_input(False)
 	part_season_mod = part_season
@@ -35,13 +29,13 @@ def read_data(year=None, part_season=None, stats=None, per_type=None):
 	elif part_season == 'Regular Season':
 		part_season_mod = 'Regular_Season'
 
-	if not os.path.isfile('CSV_stats/%s/%s/%s/%s_data_%s_%s_%s.csv' % (year, part_season_mod, stats, stats, year, part_season_mod, per_type)):
-		save_data(year, part_season, stats, per_type)
+	if not os.path.isfile('CSV_stats/%s/%s/%s/%s_data_%s.csv' % (year, part_season_mod, stats, stats, per_type)):
+		save_data_gen(year, part_season, stats, per_type)
 	
 	player_dict = {}
 	player_list = []
 
-	with open('CSV_stats/%s/%s/%s/%s_data_%s_%s_%s.csv' % (year, part_season_mod, stats, stats, year, part_season_mod, per_type), mode='r') as player_data:
+	with open('CSV_stats/%s/%s/%s/%s_data_%s.csv' % (year, part_season_mod, stats, stats, per_type), mode='r') as player_data:
 		csv_data = csv.DictReader(player_data)
 		for row in csv_data:
 			player_dict = dict(row)
@@ -49,27 +43,26 @@ def read_data(year=None, part_season=None, stats=None, per_type=None):
 			
 	return player_list
 
-def save_data(year, part_season, stats, per_type=None):
+def save_data_gen(year, part_season, stats, per_type=None):
 	data = []
 	url = 'https://stats.nba.com/players/%s/?sort=PLAYER_NAME&dir=-1&Season=%s&SeasonType=%s' % (stats, year, part_season)
 	if per_type is not None:
 		url += '&PerMode=%s' % per_type
 	print(url)
 	try:
-		data = stat_scraper_general(url, stats)
-		csv_data(data, year, part_season, stats, per_type)
+		data = stat_scraper(url, stats)
+		csv_data_gen(data, year, part_season, stats, per_type)
 	except Exception as e:
 		print(repr(e))
-
-
+		
 def info_input(save=True):
 
-	for i in range(len(type_stats)):
-		print('%d: %s' % (i, type_stats[i]))
+	for i in range(len(type_stats_gen)):
+		print('%d: %s' % (i, type_stats_gen[i]))
 	stat = input('Type in a number corresponding to the stats you want: ')
 
 	per_type = None
-	if int(stat) % 2 == 0:
+	if type_stats_gen[int(stat)] in per_type_list:
 		for i in range(len(data_type)):
 			print('%d: %s' % (i, data_type[i]))
 		per_type = input('Type in a number corresponding to category you want: ')
@@ -84,14 +77,14 @@ def info_input(save=True):
 
 	if save:
 		if per_type is None:
-			save_data(year_list[int(year)], type_season[int(part_season)], type_stats[int(stat)])
+			save_data_gen(year_list[int(year)], type_season[int(part_season)], type_stats_gen[int(stat)])
 		else:
-			save_data(year_list[int(year)], type_season[int(part_season)], type_stats[int(stat)], data_type[int(per_type)])
+			save_data_gen(year_list[int(year)], type_season[int(part_season)], type_stats_gen[int(stat)], data_type[int(per_type)])
 	else:
 		if per_type is None:
-			return year_list[int(year)], type_season[int(part_season)], type_stats[int(stat)], None
+			return year_list[int(year)], type_season[int(part_season)], type_stats_gen[int(stat)], None
 		else:
-			return year_list[int(year)], type_season[int(part_season)], type_stats[int(stat)], data_type[int(per_type)]
+			return year_list[int(year)], type_season[int(part_season)], type_stats_gen[int(stat)], data_type[int(per_type)]
 	return None
 
 def is_data(year, part_season, stats, per_type=None):
@@ -101,14 +94,14 @@ def is_data(year, part_season, stats, per_type=None):
 	elif part_season == 'Regular Season':
 		part_season_mod = 'Regular_Season'
 	
-	if os.path.isfile('CSV_stats/%s/%s/%s/%s_data_%s_%s_%s.csv' % (year, part_season_mod, stats, stats, year, part_season_mod, per_type)):
+	if os.path.isfile('CSV_stats/%s/%s/%s/%s_data_%s.csv' % (year, part_season_mod, stats, stats, per_type)):
 		return True
 	return False
 
 def all_years():
 
-	for i in range(len(type_stats)):
-		print('%d: %s' % (i, type_stats[i]))
+	for i in range(len(type_stats_gen)):
+		print('%d: %s' % (i, type_stats_gen[i]))
 	stat = input('Type in a number corresponding to the stats you want: ')
 
 	per_type = None
@@ -122,12 +115,12 @@ def all_years():
 	part_season = input('Type in a number corresponding to the part of the season you want: ')
 
 	for season in year_list:
-		if not is_data(season, type_season[int(part_season)], type_stats[int(stat)], data_type[int(per_type)]):
+		if not is_data(season, type_season[int(part_season)], type_stats_gen[int(stat)], data_type[int(per_type)]):
 			try:
 				if per_type is None:
-					save_data(season, type_season[int(part_season)], type_stats[int(stat)])
+					save_data_gen(season, type_season[int(part_season)], type_stats_gen[int(stat)])
 				else:
-					save_data(season, type_season[int(part_season)], type_stats[int(stat)], data_type[int(per_type)])
+					save_data_gen(season, type_season[int(part_season)], type_stats_gen[int(stat)], data_type[int(per_type)])
 			except Exception as e:
 				print(repr(e))
 
@@ -146,15 +139,15 @@ def all_stats():
 		print('%d: %s' % (i, year_list[i]))
 	year = input('Type in a number corresponding to the year you want: ')
 
-	for i, stat in enumerate(type_stats):
-		if not is_data(year_list[int(year)], type_season[int(part_season)], type_stats[i], data_type[int(per_type)]):
+	for i, stat in enumerate(type_stats_gen):
+		if not is_data(year_list[int(year)], type_season[int(part_season)], type_stats_gen[i], data_type[int(per_type)]):
 			if int(year) < 10 and i == 4:
 				continue
 			try:
 				if i % 2 == 1:
-					save_data(year_list[int(year)], type_season[int(part_season)], type_stats[i])
+					save_data_gen(year_list[int(year)], type_season[int(part_season)], type_stats_gen[i])
 				else:
-					save_data(year_list[int(year)], type_season[int(part_season)], type_stats[i], data_type[int(per_type)])
+					save_data_gen(year_list[int(year)], type_season[int(part_season)], type_stats_gen[i], data_type[int(per_type)])
 			except Exception as e:
 				print(repr(e))
 
