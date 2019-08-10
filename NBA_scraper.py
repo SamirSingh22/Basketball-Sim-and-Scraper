@@ -10,7 +10,7 @@ year_list = ['1996-97', '1997-98', '1998-99', '1999-00', '2000-01', '2001-02', '
 type_season = ['Pre Season', 'Regular Season', 'Playoffs']
 data_type = ['Totals', 'PerGame', 'Per100Possessions', 'Per100Plays', 'Per48', 'Per40', 'Per36', 'PerMinute', 'PerPossession', 'PerPlay', 'MinutesPer']
 type_stats_gen = ['traditional', 'advanced', 'estimated-advanced', 'misc', 'scoring', 'opponent', 'usage' , 'defense']
-type_stats_shooting = ['By zone', '5ft range', '8ft range']
+type_stats_shooting = ['By Zone', '5ft Range', '8ft Range']
 
 def get_table(soup):
     table = soup.find('div', attrs={'class':'nba-stat-table__overflow'})
@@ -18,12 +18,12 @@ def get_table(soup):
 
 def get_player_stats(type_stat, soup):
     if type_stat in type_stats_gen[0:3]:
-        player_stats =  soup.find_all('tr', attrs={'data-ng-repeat':'(i, row) in page track by ::row.$hash'})
+        return soup.find_all('tr', attrs={'data-ng-repeat':'(i, row) in page track by ::row.$hash'})
     elif type_stat in type_stats_gen:
-        player_stats = soup.find_all('tr', attrs={'data-ng-repeat':'(i, row) in page track by row.$hash'})
+        return soup.find_all('tr', attrs={'data-ng-repeat':'(i, row) in page track by row.$hash'})
     elif type_stat in type_stats_shooting:
-        player_stats = soup.find_all('tr', attrs={'ng-repeat':'(i, row) in page', 'aria-hidden':'false'})
-    return player_stats
+        return soup.find_all('tr', attrs={'ng-repeat':'(i, row) in page', 'aria-hidden':'false'})
+    return None
 
 def stat_names(type_stat, soup):
     stat_name_list = []
@@ -60,6 +60,8 @@ def stat_scraper(url, type):
     driver = webdriver.Firefox()
     driver.get(url)
     player_dict_list = []
+    if type in type_stats_shooting:
+        time.sleep(10)
     while True:
         html = driver.page_source
         soup = BeautifulSoup(html, 'html5lib')
