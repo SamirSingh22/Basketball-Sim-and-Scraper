@@ -13803,3 +13803,440 @@ console.error: BroadcastService:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
 
 1565458520660	Marionette	INFO	Stopped listening on port 35071
+1565706799618	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AGsGTbEMRbUx"
+1565706799977	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565706799978	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565706799978	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565706799978	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565706801580	Marionette	INFO	Listening on port 34303
+1565706801625	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565654482633%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+1565706831734	Marionette	INFO	Stopped listening on port 34303
+1565706885491	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.L94WQ7mvomBk"
+1565706885856	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565706885856	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565706885856	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565706885856	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565706887354	Marionette	INFO	Listening on port 41387
+1565706887396	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565654482633%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+1565706926413	Marionette	INFO	Stopped listening on port 41387
+1565706953462	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.o1hL8LFLW6ut"
+1565706953854	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565706953854	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565706953855	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565706953855	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565706955347	Marionette	INFO	Listening on port 36217
+1565706955371	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+1565706968629	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.CCjyezTNz3ik"
+1565706968991	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565706968992	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565706968992	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565706968992	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565706970665	Marionette	INFO	Listening on port 38823
+1565706970736	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+1565706979202	Marionette	INFO	Stopped listening on port 36217
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565654482633%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1565707044210	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.SVFY2YYUnjjO"
+1565707044617	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565707044617	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565707044618	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565707044618	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565707046658	Marionette	INFO	Listening on port 35147
+1565707046719	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+1565707061267	Marionette	INFO	Stopped listening on port 38823
+1565707137956	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.LDih7VfGutdx"
+1565707138325	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565707138325	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565707138325	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565707138325	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565707140202	Marionette	INFO	Listening on port 40987
+1565707140267	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+1565707142354	Marionette	INFO	Stopped listening on port 35147
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565654482633%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+
+(/usr/lib/firefox/firefox:23041): dconf-WARNING **: 10:42:02.659: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+console.warn: "Error while detaching the thread front: 'detach' request packet to 'server1.conn0.child1/context18' can't be sent as the connection is closed."
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1565707331581	Marionette	INFO	Stopped listening on port 40987
+1565707335229	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.x6dnFKE8tM0I"
+1565707335588	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565707335588	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565707335588	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565707335588	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565707337187	Marionette	INFO	Listening on port 39225
+1565707337239	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1424: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565654482633%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+1565707379294	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fR9jBeFGb9f8"
+1565707379677	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565707379677	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565707379677	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565707379677	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565707380199	Marionette	INFO	Stopped listening on port 39225
+1565707381248	Marionette	INFO	Listening on port 34859
+1565707381304	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1424: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+1565707396509	Marionette	INFO	Stopped listening on port 34859
+1565707506306	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.gwykobSx2NFE"
+1565707506674	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565707506674	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565707506674	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565707506674	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565707508427	Marionette	INFO	Listening on port 45965
+1565707508516	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565654482633%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+1565707552689	Marionette	INFO	Stopped listening on port 45965
+1565707624948	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.DVm7RcjG8Xqm"
+1565707625321	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565707625321	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565707625321	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565707625321	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565707626785	Marionette	INFO	Listening on port 33133
+1565707626857	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565654482633%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1565707685451	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Dc030LNv7qgc"
+1565707685837	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565707685837	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565707685837	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565707685837	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565707687471	Marionette	INFO	Listening on port 34103
+1565707687560	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+1565707693784	Marionette	INFO	Stopped listening on port 33133
+1565707694886	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.sm8FW9UNc5B5"
+1565707695321	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565707695321	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565707695321	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565707695321	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565707696940	Marionette	INFO	Listening on port 39541
+1565707696994	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+1565707700748	Marionette	INFO	Stopped listening on port 34103
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565654482633%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1565707763310	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.aLcfMIszsQS5"
+1565707763687	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565707763688	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565707763688	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565707763688	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565707765354	Marionette	INFO	Listening on port 32819
+1565707765418	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+1565707772485	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.gFO0LgV8nm5D"
+1565707772871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565707772871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565707772871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565707772871	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565707773938	Marionette	INFO	Stopped listening on port 39541
+1565707774574	Marionette	INFO	Listening on port 38005
+1565707774593	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+console.error: (new Error("SessionFile is closed", "resource:///modules/sessionstore/SessionFile.jsm", 374))
+1565707789161	Marionette	INFO	Stopped listening on port 32819
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565654482633%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+1565707806463	Marionette	INFO	Stopped listening on port 38005
+1565707867923	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.YLsVmDOuvy6E"
+1565707868293	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565707868293	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565707868293	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565707868293	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565707869894	Marionette	INFO	Listening on port 34855
+1565707869936	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+1565707877350	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Xz0jX90VTvtv"
+1565707877770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565707877770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565707877770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565707877770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565707879358	Marionette	INFO	Listening on port 46699
+1565707879458	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+1565707886134	Marionette	INFO	Stopped listening on port 34855
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+1565707894378	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.lQfGcJM1QjQv"
+1565707894770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565707894770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565707894770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565707894770	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565707896359	Marionette	INFO	Listening on port 43177
+1565707896399	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+1565707898260	Marionette	INFO	Stopped listening on port 46699
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x530005,name=PHttpChannel::Msg_Cancel) Closed channel: cannot send/recv
+
+[Parent 25909, Gecko_IOThread] WARNING: pipe error (111): Connection reset by peer: file /build/firefox-tGfEvD/firefox-68.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1565707903789	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.BGf0JwUs4WCB"
+1565707904155	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565707904155	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565707904156	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565707904156	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565707905736	Marionette	INFO	Listening on port 43489
+1565707905796	Marionette	WARN	TLS certificate errors will be ignored for this session
+1565707905913	Marionette	INFO	Stopped listening on port 43177
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565654482633%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1565707930794	Marionette	INFO	Stopped listening on port 43489
+1565798776003	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.JVN17GvWNvuS"
+1565798776362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565798776362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565798776362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565798776362	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565798778026	Marionette	INFO	Listening on port 34171
+1565798778110	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&shots-general=Catch%20and%20Shoot&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&shots-general=Catch%20and%20Shoot&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+1565798796670	Marionette	INFO	Stopped listening on port 34171
+1565798838131	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.eEVZEBFsEFYu"
+1565798838516	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565798838516	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565798838517	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565798838517	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565798840041	Marionette	INFO	Listening on port 39065
+1565798840139	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&GeneralRange=Catch%20and%20Shoot&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&GeneralRange=Catch%20and%20Shoot&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221565740805582%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:201:13
+
+1565798868925	Marionette	INFO	Stopped listening on port 39065
+1565798913727	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.RdrK1PFgOEOs"
+1565798914081	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565798914081	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565798914081	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565798914081	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565798915493	Marionette	INFO	Listening on port 41667
+1565798915542	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&GeneralRange=Catch%20and%20Shoot&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-general/?Season=2018-19&SeasonType=Regular%20Season&GeneralRange=Catch%20and%20Shoot&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+1565798929628	Marionette	INFO	Stopped listening on port 41667
+1565799037204	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.JOFFFjemOLvY"
+1565799037569	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565799037569	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565799037569	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565799037569	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565799039105	Marionette	INFO	Listening on port 39615
+1565799039113	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-dribbles/?Season=2018-19&SeasonType=Playoffss&DribbleRange=3-6%20Dribbles&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-dribbles/?Season=2018-19&SeasonType=Playoffss&DribbleRange=3-6%20Dribbles&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+Exiting due to channel error.
+1565799065160	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.uVGzkaknndv2"
+1565799065553	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1565799065553	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1565799065553	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1565799065553	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1565799067038	Marionette	INFO	Listening on port 39943
+1565799067067	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://s.cdn.turner.com/ads/nba2/adfuel.js, line 33: TypeError: window.AdFuelUtils is undefined
+JavaScript error: https://s.cdn.turner.com/ads/nba2/nba_stats.js, line 2: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-dribbles/?Season=2018-19&SeasonType=Playoffs&DribbleRange=3-6%20Dribbles&sort=PLAYER_NAME&dir=-1, line 1422: ReferenceError: AdFuel is not defined
+JavaScript error: https://stats.nba.com/players/shots-dribbles/?Season=2018-19&SeasonType=Playoffs&DribbleRange=3-6%20Dribbles&sort=PLAYER_NAME&dir=-1 line 5 > scriptElement, line 4: TypeError: googletag.pubads is not a function
+1565799075485	Marionette	INFO	Stopped listening on port 39943

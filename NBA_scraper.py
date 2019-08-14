@@ -11,6 +11,14 @@ type_season = ['Pre Season', 'Regular Season', 'Playoffs']
 data_type = ['Totals', 'PerGame', 'Per100Possessions', 'Per100Plays', 'Per48', 'Per40', 'Per36', 'PerMinute', 'PerPossession', 'PerPlay', 'MinutesPer']
 type_stats_gen = ['traditional', 'advanced', 'estimated-advanced', 'misc', 'scoring', 'opponent', 'usage' , 'defense']
 type_stats_shooting = ['By Zone', '5ft Range', '8ft Range']
+type_stats_shot_dashboard = {
+'shots-general': ['Overall', 'Catch and Shoot', 'Pullups', 'Less Than 10 ft'], 
+'shots-shotclock':['24-22', '22-18 Very Early', '18-15 Early', '15-7 Average', '7-4 Late', '4-0 Very Late', 'ShotClock Off'],
+'shots-dribbles': ['0 Dribbles', '1 Dribbles', '2 Dribbles', '3-6 Dribbles', '7+ Dribbles'],
+'shots-touch-time': ['Touch 0-2 Seconds', 'Touch 2-6 Seconds', 'Touch 6+ Seconds'],
+'shots-closest-defender': ['0-2 Feet-Very Tight', '2-4 Feet-Tight', '4-6 Feet-Open', '6+ Feet-Wide Open'],
+'shots-closest-defender-10': ['0-2 Feet-Very Tight', '2-4 Feet-Tight', '4-6 Feet-Open', '6+ Feet-Wide Open']
+}
 
 def get_table(soup):
     table = soup.find('div', attrs={'class':'nba-stat-table__overflow'})
@@ -19,7 +27,7 @@ def get_table(soup):
 def get_player_stats(type_stat, soup):
     if type_stat in type_stats_gen[0:3]:
         return soup.find_all('tr', attrs={'data-ng-repeat':'(i, row) in page track by ::row.$hash'})
-    elif type_stat in type_stats_gen:
+    elif type_stat in type_stats_gen or type_stat in type_stats_shot_dashboard:
         return soup.find_all('tr', attrs={'data-ng-repeat':'(i, row) in page track by row.$hash'})
     elif type_stat in type_stats_shooting:
         return soup.find_all('tr', attrs={'ng-repeat':'(i, row) in page', 'aria-hidden':'false'})
@@ -42,10 +50,18 @@ def stat_names(type_stat, soup):
             stat_name_list = stat_name_list_app[:] + stat_name_list[:]
     elif type_stat in type_stats_shooting:
         all_stats = soup.find_all('tr', attrs={'aria-hidden':'false'})
-        stats= all_stats[1].find_all(attrs={'class':'grouped'})
+        stats = all_stats[1].find_all(attrs={'class':'grouped'})
         for stat in stats:
             stat_name_list.append(stat['data-field'])
         stat_name_list = stat_name_list_app[:] + stat_name_list[:]
+    elif type_stat in type_stats_shot_dashboard:
+        stats = soup.find('thead').find_all('tr')[1].find_all('th')
+        for i, name in enumerate(stats):
+            if i == 0 or i == 1:
+                continue
+            else:
+                stat_name_list.append(name['data-field'])
+        stat_name_list = stat_name_list_app[:2] + stat_name_list
     return stat_name_list
 
 def get_pages(soup):
